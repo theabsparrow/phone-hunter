@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter </title>
+    <!-- favicon section -->
+    <link rel="shortcut icon" href="./images/mobile-phone.png" type="image/x-icon">
+    <!-- tailwind and daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- custom css style -->
+    <style>
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <!-- custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-button': '#0D6EFD',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<!-- body section starts -->
+
+<body class="font-poppins relative">
+    <!-- header section starts -->
+    <header class="conatiner mx-auto pt-6 lg:pt-12 px-5 lg:px-[130px] bg-[#0D6EFD0D]">
+        <!-- navbar starts here -->
+        <nav class="flex justify-between items-center">
+            <h1 class="text-[#403F3F] text-[25px] font-bold leading-[30px]">Hot Gadgets</h1>
+            <div>
+                <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Sign
+                    Up</button>
+            </div>
+        </nav>
+        <!-- navbar ends here -->
+
+        <!-- banner section starts -->
+        <div class="mt-6 lg:mt-12 relative">
+            <!-- banner heading -->
+            <div class="flex flex-col items-center pb-[100px] lg:pb-[360px]">
+                <div class="text-center">
+                    <h1
+                        class="text-[#100F0F] text-[40px] lg:text-[65px] font-bold leading-[55px] lg:leading-[98px] mb-4 lg:mb-6">
+                        Apple Iphone 13 Pro Max</h1>
+                    <p class="text-[#706F6F] text-lg font-[30px] mb-5 lg:mb-8 w-[90vw] lg:w-[50vw]">There are many
+                        variations of
+                        passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in some form, by injected humou.</p>
+                </div>
+                <div>
+                    <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- banner sectione ends -->
+    </header>
+    <!-- header section ends -->
+
+    <!-- main section starts -->
+    <main class="conatiner mx-auto px-5 lg:px-[130px]">
+        <!-- banner section starts -->
+        <section class="flex flex-col items-center relative bottom-[80px] lg:bottom-[340px] left-[5px]">
+            <!-- banner image -->
+            <div>
+                <img src="./images/mobile-phone.png" alt="mobile-phones">
+            </div>
+
+            <!-- phone search section -->
+            <div class="flex flex-col items-center">
+                <h1 class="text-[#100F0F] text-[35px] font-semibold leading-[53px] mb-[30px]">Search your phone</h1>
+                <div>
+                    <input
+                        class="bg-[#100F0D0D] py-2 lg:py-[10px] pl-6 lg:pl-[57px] w-[60vw] lg:w-[30vw] outline-none border-[#100F0D0D] border-[1px] rounded-xl text-[#706F6F] leading-[30px]"
+                        type="text" placeholder="search your phone">
+                    <button
+                        class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Search</button>
+                </div>
+            </div>
+        </section>
+        <!-- banner section ends -->
+
+        
+        <!-- phone section -->
+        <section class="-mt-7 lg:mt-[-270px] grid grid-cols-1 lg:grid-cols-3 gap-5">
+            <!-- first card -->
+            <div class="p-3 lg:p-6 border-[1px] border-[#CFCFCF] rounded-lg flex flex-col items-center">
+                <div class="bg-[#0D6EFD0D] rounded-lg p-4 lg:p-10 mb-3 lg:mb-6">
+                    <img src="./images/phone-card.png" alt="iphone">
+                </div>
+                <div class="flex flex-col items-center">
+                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-5">Iphone 13 Pro Max</h1>
+                    <p class="text-[#706F6F] text-lg leading-[30px] mb-2 text-center">There are many variations of
+                        passages of available, but the majority have suffered</p>
+                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-4">$999</h1>
+                    <div>
+                        <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- second card -->
+            <div class="p-3 lg:p-6 border-[1px] border-[#CFCFCF] rounded-lg flex flex-col items-center">
+                <div class="bg-[#0D6EFD0D] rounded-lg p-4 lg:p-10 mb-3 lg:mb-6">
+                    <img src="./images/phone-card.png" alt="iphone">
+                </div>
+                <div class="flex flex-col items-center">
+                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-5">Iphone 13 Pro Max</h1>
+                    <p class="text-[#706F6F] text-lg leading-[30px] mb-2 text-center">There are many variations of
+                        passages of available, but the majority have suffered</p>
+                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-4">$999</h1>
+                    <div>
+                        <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- third card -->
+            <div class="p-3 lg:p-6 border-[1px] border-[#CFCFCF] rounded-lg flex flex-col items-center">
+                <div class="bg-[#0D6EFD0D] rounded-lg p-4 lg:p-10 mb-3 lg:mb-6">
+                    <img src="./images/phone-card.png" alt="iphone">
+                </div>
+                <div class="flex flex-col items-center">
+                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-5">Iphone 13 Pro Max</h1>
+                    <p class="text-[#706F6F] text-lg leading-[30px] mb-2 text-center">There are many variations of
+                        passages of available, but the majority have suffered</p>
+                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-4">$999</h1>
+                    <div>
+                        <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card four -->
+            <div class="p-3 lg:p-6 border-[1px] border-[#CFCFCF] rounded-lg flex flex-col items-center">
+                <div class="bg-[#0D6EFD0D] rounded-lg p-4 lg:p-10 mb-3 lg:mb-6">
+                    <img src="./images/phone-card.png" alt="iphone">
+                </div>
+                <div class="flex flex-col items-center">
+                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-5">Iphone 13 Pro Max</h1>
+                    <p class="text-[#706F6F] text-lg leading-[30px] mb-2 text-center">There are many variations of
+                        passages of available, but the majority have suffered</p>
+                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-4">$999</h1>
+                    <div>
+                        <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card five -->
+            <div class="p-3 lg:p-6 border-[1px] border-[#CFCFCF] rounded-lg flex flex-col items-center">
+                <div class="bg-[#0D6EFD0D] rounded-lg p-4 lg:p-10 mb-3 lg:mb-6">
+                    <img src="./images/phone-card.png" alt="iphone">
+                </div>
+                <div class="flex flex-col items-center">
+                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-5">Iphone 13 Pro Max</h1>
+                    <p class="text-[#706F6F] text-lg leading-[30px] mb-2 text-center">There are many variations of
+                        passages of available, but the majority have suffered</p>
+                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-4">$999</h1>
+                    <div>
+                        <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card six -->
+            <div class="p-3 lg:p-6 border-[1px] border-[#CFCFCF] rounded-lg flex flex-col items-center">
+                <div class="bg-[#0D6EFD0D] rounded-lg p-4 lg:p-10 mb-3 lg:mb-6">
+                    <img src="./images/phone-card.png" alt="iphone">
+                </div>
+                <div class="flex flex-col items-center">
+                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-5">Iphone 13 Pro Max</h1>
+                    <p class="text-[#706F6F] text-lg leading-[30px] mb-2 text-center">There are many variations of
+                        passages of available, but the majority have suffered</p>
+                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-4">$999</h1>
+                    <div>
+                        <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="mt-6 lg:mt-12 flex justify-center">
+            <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show All</button>
+        </div>
+    </main>
+    <!-- main section ends -->
+
+    <!-- footer section starts -->
+<footer class="bg-[#0D6EFD0D] py-[40px] lg:py-[120px] px-5 lg:px-[130px] mt-[40px] lg:mt-[120px]">
+    <div class="pb-12 border-b-[2px] border-[#CFCFCF] flex flex-col lg:flex-row lg:justify-between items-center space-y-5">
+        <div>
+            <h1 class="text-[#100F0F] text-[35px] font-bold leading-[40px] mb-2">Hot Gadgets</h1>
+            <p class="text-#706F6F font-medium leading-[25px] opacity-60">You can definitely work.</p>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center gap-4">
+            <div class="flex items-center gap-3">
+                <img src="./images/facebook.png" alt="facebook">
+                <img src="./images/instagram.png" alt="instagram">
+                <img src="./images/twitter.png" alt="twitter">
+            </div>
+            <div>
+                <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Join Premium</button>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section ends -->
+    <script src="./index.js"></script>
+</body>
+<!-- body section ends -->
+
+</html>
