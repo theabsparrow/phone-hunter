@@ -86,174 +86,120 @@
             <div class="flex flex-col items-center">
                 <h1 class="text-[#100F0F] text-[35px] font-semibold leading-[53px] mb-[30px]">Search your phone</h1>
                 <div>
-                    <input
+                    <input id="search-field"
                         class="bg-[#100F0D0D] py-2 lg:py-[10px] pl-6 lg:pl-[57px] w-[60vw] lg:w-[30vw] outline-none border-[#100F0D0D] border-[1px] rounded-xl text-[#706F6F] leading-[30px]"
                         type="text" placeholder="search your phone">
-                    <button
+                    <button onclick="searchYourPhone()"
                         class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Search</button>
                 </div>
+            </div>
+
+            <div id="loading-spinner" class="mt-12 hidden">
+                <span class="loading loading-spinner text-secondary"></span>
             </div>
         </section>
         <!-- banner section ends -->
 
-        
         <!-- phone section -->
-        <section class="-mt-7 lg:mt-[-270px] grid grid-cols-1 lg:grid-cols-3 gap-5">
-            <!-- first card -->
-            <div class="p-3 lg:p-6 border-[1px] border-[#CFCFCF] rounded-lg flex flex-col items-center">
-                <div class="bg-[#0D6EFD0D] rounded-lg p-4 lg:p-10 mb-3 lg:mb-6">
-                    <img src="./images/phone-card.png" alt="iphone">
-                </div>
-                <div class="flex flex-col items-center">
-                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-5">Iphone 13 Pro Max</h1>
-                    <p class="text-[#706F6F] text-lg leading-[30px] mb-2 text-center">There are many variations of
-                        passages of available, but the majority have suffered</p>
-                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-4">$999</h1>
-                    <div>
-                        <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show
-                            Details</button>
-                    </div>
-                </div>
-            </div>
-            <!-- second card -->
-            <div class="p-3 lg:p-6 border-[1px] border-[#CFCFCF] rounded-lg flex flex-col items-center">
-                <div class="bg-[#0D6EFD0D] rounded-lg p-4 lg:p-10 mb-3 lg:mb-6">
-                    <img src="./images/phone-card.png" alt="iphone">
-                </div>
-                <div class="flex flex-col items-center">
-                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-5">Iphone 13 Pro Max</h1>
-                    <p class="text-[#706F6F] text-lg leading-[30px] mb-2 text-center">There are many variations of
-                        passages of available, but the majority have suffered</p>
-                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-4">$999</h1>
-                    <div>
-                        <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show
-                            Details</button>
-                    </div>
-                </div>
-            </div>
-            <!-- third card -->
-            <div class="p-3 lg:p-6 border-[1px] border-[#CFCFCF] rounded-lg flex flex-col items-center">
-                <div class="bg-[#0D6EFD0D] rounded-lg p-4 lg:p-10 mb-3 lg:mb-6">
-                    <img src="./images/phone-card.png" alt="iphone">
-                </div>
-                <div class="flex flex-col items-center">
-                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-5">Iphone 13 Pro Max</h1>
-                    <p class="text-[#706F6F] text-lg leading-[30px] mb-2 text-center">There are many variations of
-                        passages of available, but the majority have suffered</p>
-                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-4">$999</h1>
-                    <div>
-                        <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show
-                            Details</button>
-                    </div>
-                </div>
-            </div>
-            <!-- card four -->
-            <div class="p-3 lg:p-6 border-[1px] border-[#CFCFCF] rounded-lg flex flex-col items-center">
-                <div class="bg-[#0D6EFD0D] rounded-lg p-4 lg:p-10 mb-3 lg:mb-6">
-                    <img src="./images/phone-card.png" alt="iphone">
-                </div>
-                <div class="flex flex-col items-center">
-                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-5">Iphone 13 Pro Max</h1>
-                    <p class="text-[#706F6F] text-lg leading-[30px] mb-2 text-center">There are many variations of
-                        passages of available, but the majority have suffered</p>
-                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-4">$999</h1>
-                    <div>
-                        <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show
-                            Details</button>
-                    </div>
-                </div>
-            </div>
-            <!-- card five -->
-            <div class="p-3 lg:p-6 border-[1px] border-[#CFCFCF] rounded-lg flex flex-col items-center">
-                <div class="bg-[#0D6EFD0D] rounded-lg p-4 lg:p-10 mb-3 lg:mb-6">
-                    <img src="./images/phone-card.png" alt="iphone">
-                </div>
-                <div class="flex flex-col items-center">
-                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-5">Iphone 13 Pro Max</h1>
-                    <p class="text-[#706F6F] text-lg leading-[30px] mb-2 text-center">There are many variations of
-                        passages of available, but the majority have suffered</p>
-                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-4">$999</h1>
-                    <div>
-                        <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show
-                            Details</button>
-                    </div>
-                </div>
-            </div>
-            <!-- card six -->
-            <div class="p-3 lg:p-6 border-[1px] border-[#CFCFCF] rounded-lg flex flex-col items-center">
-                <div class="bg-[#0D6EFD0D] rounded-lg p-4 lg:p-10 mb-3 lg:mb-6">
-                    <img src="./images/phone-card.png" alt="iphone">
-                </div>
-                <div class="flex flex-col items-center">
-                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-5">Iphone 13 Pro Max</h1>
-                    <p class="text-[#706F6F] text-lg leading-[30px] mb-2 text-center">There are many variations of
-                        passages of available, but the majority have suffered</p>
-                    <h1 class="text-[#403F3F] text-2xl font-bold leading-[38px] mb-4">$999</h1>
-                    <div>
-                        <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show
-                            Details</button>
-                    </div>
-                </div>
-            </div>
+        <section id="phone-section" class="-mt-7 lg:mt-[-270px] grid grid-cols-1 lg:grid-cols-3 gap-5">
+
         </section>
-        <div class="mt-6 lg:mt-12 flex justify-center">
+        <div id="show-all-button" class="mt-6 lg:mt-12 flex justify-center hidden">
             <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Show All</button>
         </div>
     </main>
     <!-- main section ends -->
-
-    <!-- footer section starts -->
-<footer class="bg-[#0D6EFD0D] py-[40px] lg:py-[120px] px-5 lg:px-[130px] mt-[40px] lg:mt-[120px]">
-    <!-- footer heading -->
-    <div class="pb-12 border-b-[2px] border-[#CFCFCF] flex flex-col lg:flex-row lg:justify-between items-center space-y-5">
+    <section>
         <div>
-            <h1 class="text-[#100F0F] text-[35px] font-bold leading-[40px] mb-2">Hot Gadgets</h1>
-            <p class="text-#706F6F font-medium leading-[25px] opacity-60">You can definitely work.</p>
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="show_detail" class="modal">
+                <div class="modal-box p-4">
+                    <div class="bg-[#0D6EFD0D] p-5 mb-6">
+                        <img src="./images/phone-card.png" alt="">
+                    </div>
+                    <h1
+                        class="text-[#100F0F] text-[25px]  font-bold leading-[55px] lg:leading-[98px]">
+                        Apple Iphone 13 Pro Max</h1>
+                    <p class="text-[#706F6F] text-lg font-[30px] w-[90vw] lg:w-[50vw]">It is a long
+                        established fact that a reader will be distracted by the readable content of a page when looking
+                        at its layout.</p>
+                    <h1 class="text-lg font-[30px]">Storage : <span class="text-[#706F6F]">128GB/256GB/1TB Storage, No card
+                            slot</span></h1>
+                    <h1 class="text-lg font-[30px]">Display Size : <span class="text-[#706F6F]" text-lg font-[30px]> 6.7 Inches, 109.8 cm </span>
+                    </h1>
+                    <h1 class="text-lg font-[30px]">Chipset : <span class="text-[#706F6F]" text-lg font-[30px]> Apple A15 Bionic </span></h1>
+                    <h1 class="text-lg font-[30px]">Memory :<span class="text-[#706F6F]" text-lg font-[30px]>128GB 6 GB RAM, 256GB RAM, 512GB RAM1
+                            1TB 6GB RAM </span></h1>
+                    <h1 class="text-lg font-[30px]">Slug : <span class="text-[#706F6F]" text-lg font-[30px]>Applice_Iphone_13_Pro_Max </span></h1>
+                    <h1 class="text-lg font-[30px]">Release data :<span class="text-[#706F6F]" text-lg font-[30px]>Released 2021, September 24
+                        </span></h1>
+                    <h1 class="text-lg font-[30px]">Brand : <span class="text-[#706F6F]" text-lg font-[30px]>Apple </span></h1>
+                    <h1 class="text-lg font-[30px]">GPS : <span class="text-[#706F6F]" text-lg font-[30px]>AYes, with A-GPS, GLONASS, GALILEO, BDS,
+                            QZSS </span></h1>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </div>
-        <div class="flex flex-col lg:flex-row items-center gap-4">
-            <div class="flex items-center gap-3">
-                <img src="./images/facebook.png" alt="facebook">
-                <img src="./images/instagram.png" alt="instagram">
-                <img src="./images/twitter.png" alt="twitter">
-            </div>
+    </section>
+    <!-- footer section starts -->
+    <footer class="bg-[#0D6EFD0D] py-[40px] lg:py-[120px] px-5 lg:px-[130px] mt-[40px] lg:mt-[120px]">
+        <!-- footer heading -->
+        <div
+            class="pb-12 border-b-[2px] border-[#CFCFCF] flex flex-col lg:flex-row lg:justify-between items-center space-y-5">
             <div>
-                <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Join Premium</button>
+                <h1 class="text-[#100F0F] text-[35px] font-bold leading-[40px] mb-2">Hot Gadgets</h1>
+                <p class="text-#706F6F font-medium leading-[25px] opacity-60">You can definitely work.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row items-center gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="./images/facebook.png" alt="facebook">
+                    <img src="./images/instagram.png" alt="instagram">
+                    <img src="./images/twitter.png" alt="twitter">
+                </div>
+                <div>
+                    <button class="btn bg-primary-button text-white text-xl font-bold leading-7 border-none">Join
+                        Premium</button>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- footer container -->
-    <div class="flex flex-col lg:flex-row justify-between mt-12">
-        <div class="text-[#403F3F] space-y-5">
-            <h1 class="text-lg font-medium leading-[48px]">Products</h1>
-            <h1 class="text-lg font-medium leading-[48px]">Browse Jobs</h1>
-            <h1 class="text-lg font-medium leading-[48px]">Remote Jobs</h1>
-            <h1 class="text-lg font-medium leading-[48px]">Startup Jobs</h1>
-            <h1 class="text-lg font-medium leading-[48px]">Company Jobs</h1>
+        <!-- footer container -->
+        <div class="flex flex-col lg:flex-row justify-between mt-12">
+            <div class="text-[#403F3F] space-y-5">
+                <h1 class="text-lg font-medium leading-[48px]">Products</h1>
+                <h1 class="text-lg font-medium leading-[48px]">Browse Jobs</h1>
+                <h1 class="text-lg font-medium leading-[48px]">Remote Jobs</h1>
+                <h1 class="text-lg font-medium leading-[48px]">Startup Jobs</h1>
+                <h1 class="text-lg font-medium leading-[48px]">Company Jobs</h1>
+            </div>
+            <div class="text-[#403F3F] space-y-5">
+                <h1 class="text-lg font-medium leading-[48px]">Popular</h1>
+                <h1 class="text-lg font-medium leading-[48px]">UIUX Design</h1>
+                <h1 class="text-lg font-medium leading-[48px]">Product Design</h1>
+                <h1 class="text-lg font-medium leading-[48px]">Back-End Developer</h1>
+                <h1 class="text-lg font-medium leading-[48px]">Front-End Developer</h1>
+            </div>
+            <div class="text-[#403F3F] space-y-5">
+                <h1 class="text-lg font-medium leading-[48px]">Resource</h1>
+                <h1 class="text-lg font-medium leading-[48px]">FAQ</h1>
+                <h1 class="text-lg font-medium leading-[48px]">Support</h1>
+                <h1 class="text-lg font-medium leading-[48px]">Privacy Policy</h1>
+                <h1 class="text-lg font-medium leading-[48px]">Terms and Service</h1>
+            </div>
+            <div class="text-[#403F3F] space-y-5">
+                <h1 class="text-lg font-medium leading-[48px]">Company</h1>
+                <h1 class="text-lg font-medium leading-[48px]">About Us</h1>
+                <h1 class="text-lg font-medium leading-[48px]">Contact Us</h1>
+                <h1 class="text-lg font-medium leading-[48px]">Career Tips</h1>
+                <h1 class="text-lg font-medium leading-[48px]">Career</h1>
+            </div>
         </div>
-        <div class="text-[#403F3F] space-y-5">
-            <h1 class="text-lg font-medium leading-[48px]">Popular</h1>
-            <h1 class="text-lg font-medium leading-[48px]">UIUX Design</h1>
-            <h1 class="text-lg font-medium leading-[48px]">Product Design</h1>
-            <h1 class="text-lg font-medium leading-[48px]">Back-End Developer</h1>
-            <h1 class="text-lg font-medium leading-[48px]">Front-End Developer</h1>
-        </div>
-        <div class="text-[#403F3F] space-y-5">
-            <h1 class="text-lg font-medium leading-[48px]">Resource</h1>
-            <h1 class="text-lg font-medium leading-[48px]">FAQ</h1>
-            <h1 class="text-lg font-medium leading-[48px]">Support</h1>
-            <h1 class="text-lg font-medium leading-[48px]">Privacy Policy</h1>
-            <h1 class="text-lg font-medium leading-[48px]">Terms and Service</h1>
-        </div>
-        <div class="text-[#403F3F] space-y-5">
-            <h1 class="text-lg font-medium leading-[48px]">Company</h1>
-            <h1 class="text-lg font-medium leading-[48px]">About Us</h1>
-            <h1 class="text-lg font-medium leading-[48px]">Contact Us</h1>
-            <h1 class="text-lg font-medium leading-[48px]">Career Tips</h1>
-            <h1 class="text-lg font-medium leading-[48px]">Career</h1>
-        </div>
-    </div>
-</footer>
-<!-- footer section ends -->
+    </footer>
+    <!-- footer section ends -->
     <script src="./index.js"></script>
 </body>
 <!-- body section ends -->
