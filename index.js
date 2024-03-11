@@ -15,14 +15,14 @@ const showThePhones = allPhone => {
     const phoneSection = document.getElementById("phone-section")
     phoneSection.innerHTML = ""
     const showAllButton = document.getElementById("show-all-button");
-    if(allPhone.length > 12){
+    if (allPhone.length > 12) {
         showAllButton.classList.remove("hidden")
     }
-    else{
+    else {
         showAllButton.classList.add("hidden")
     }
 
-    allPhone = allPhone.slice(0,12)
+    allPhone = allPhone.slice(0, 12)
 
     allPhone.forEach(phone => {
         const div = document.createElement("div")
@@ -40,34 +40,70 @@ const showThePhones = allPhone => {
                 Details</button>
         </div>
     </div>`
-    phoneSection.appendChild(div);
+        phoneSection.appendChild(div);
     });
-toggleLoading(false)
+    toggleLoading(false)
 }
 
 const searchYourPhone = () => {
     toggleLoading(true)
     const searchField = document.getElementById("search-field")
     const searchText = searchField.value;
-    console.log(searchText);
     loadingThePhones(searchText)
 }
 
 const toggleLoading = (loading) => {
-   const loadingSpinner = document.getElementById("loading-spinner")
-   if (loading){
-    loadingSpinner.classList.remove("hidden")
-   }
-   else{
-    loadingSpinner.classList.add("hidden")
-   }
+    const loadingSpinner = document.getElementById("loading-spinner")
+    if (loading) {
+        loadingSpinner.classList.remove("hidden")
+    }
+    else {
+        loadingSpinner.classList.add("hidden")
+    }
 }
 
-const showDetail = async(id) => {
-const response =await fetch(`https://openapi.programming-hero.com/api/phone/${id}`)
-const data = await response.json()
-const details = data.data;
-console.log(details);
+const showDetail = async (id) => {
+    const response = await fetch(`https://openapi.programming-hero.com/api/phone/${id}`)
+    const data = await response.json()
+    const details = data.data;
+    showPhoneDetails(details)
+}
+
+const showPhoneDetails = (detail) => {
+    const modalDetailBox = document.getElementById("modal-detail-box");
+    modalDetailBox.innerHTML = `
+<div class="bg-[#0D6EFD0D] p-5 flex justify-center rounded-lg">
+<img class="w-[50vw] lg:w-[10vw]" src="${detail.image
+}" alt="">
+</div>
+<h1
+class="text-[#100F0F] text-lg font-bold leading-10 text-center"> ${detail.name}
+</h1>
+<p class="text-[#706F6F] text-lg font-[30px] w-[80vw] lg:w-[30vw] mb-6 text-center">It is a long
+established fact that a reader will be distracted by the readable content of a page when looking
+at its layout.</p>
+<h1 class="text-lg font-[30px]">Storage : <span class="text-[#706F6F]"> ${detail.mainFeatures
+.storage}</span></h1>
+<h1 class="text-lg font-[30px]">Display Size : <span class="text-[#706F6F]" text-lg font-[30px]>${detail.mainFeatures
+    .displaySize}</span>
+</h1>
+<h1 class="text-lg font-[30px]">Chipset : <span class="text-[#706F6F]" text-lg font-[30px]> ${detail.mainFeatures
+    .chipSet} </span></h1>
+<h1 class="text-lg font-[30px]">Memory :<span class="text-[#706F6F]" text-lg font-[30px]>${detail.mainFeatures
+    .memory} </span></h1>
+<h1 class="text-lg font-[30px]">Slug : <span class="text-[#706F6F]" text-lg font-[30px]>${detail.slug} </span></h1>
+<h1 class="text-lg font-[30px]">Release data :<span class="text-[#706F6F]" text-lg font-[30px]>${detail.releaseDate
+}
+</span></h1>
+<h1 class="text-lg font-[30px]">Brand : <span class="text-[#706F6F]" text-lg font-[30px]>${detail.brand} </span></h1>
+<h1 class="text-lg font-[30px]">GPS : <span class="text-[#706F6F]" text-lg font-[30px]>${detail.others.GPS} </span></h1>
+<div class="modal-action">
+<form method="dialog">
+    <!-- if there is a button in form, it will close the modal -->
+    <button class="btn">Close</button>
+</form>
+</div>
+`
 }
 
 loadingPhones()
