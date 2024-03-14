@@ -5,24 +5,25 @@ const loadingPhones = async () => {
     showThePhones(phoneArray)
 }
 
-const loadingThePhones = async (searchText) => {
+const loadingThePhones = async (searchText, isShowAll) => {
     const response = await fetch(`https://openapi.programming-hero.com/api/phones?search=${searchText}`);
     const data = await response.json();
     const phoneArray = data.data
-    showThePhones(phoneArray)
+    showThePhones(phoneArray,isShowAll)
 }
-const showThePhones = allPhone => {
+const showThePhones = (allPhone,isShowAll) => {
     const phoneSection = document.getElementById("phone-section")
     phoneSection.innerHTML = ""
     const showAllButton = document.getElementById("show-all-button");
-    if (allPhone.length > 12) {
+    if (allPhone.length > 12 && !isShowAll) {
         showAllButton.classList.remove("hidden")
     }
     else {
         showAllButton.classList.add("hidden")
     }
-
-    allPhone = allPhone.slice(0, 12)
+    if(!isShowAll){
+        allPhone = allPhone.slice(0, 12)
+    }
 
     allPhone.forEach(phone => {
         const div = document.createElement("div")
@@ -45,11 +46,11 @@ const showThePhones = allPhone => {
     toggleLoading(false)
 }
 
-const searchYourPhone = () => {
+const searchYourPhone = (isShowAll) => {
     toggleLoading(true)
     const searchField = document.getElementById("search-field")
     const searchText = searchField.value;
-    loadingThePhones(searchText)
+    loadingThePhones(searchText, isShowAll)
 }
 
 const toggleLoading = (loading) => {
@@ -100,10 +101,14 @@ at its layout.</p>
 <div class="modal-action">
 <form method="dialog">
     <!-- if there is a button in form, it will close the modal -->
-    <button class="btn">Close</button>
+    <button class="btn bg-red-400">Close</button>
 </form>
 </div>
 `
+}
+
+const showAllHandle = () => {
+    searchYourPhone(true)
 }
 
 loadingPhones()
